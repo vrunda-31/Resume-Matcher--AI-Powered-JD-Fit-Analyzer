@@ -10,7 +10,7 @@ export interface AnalysisResult {
 }
 
 const BASE_URL =
-  (import.meta.env.VITE_API_URL as string | undefined) ?? "http://localhost:8000";
+  (import.meta.env.VITE_API_URL as string | undefined) ?? "https://your-railway-url.up.railway.app";
 
 export async function uploadResume(file: File): Promise<string> {
   const form = new FormData();
